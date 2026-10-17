@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beyond the Code — My Story. A personal journey of curiosity, engineering, and continuous growth by Shreya G. for the iLEAD 2027 Build Your Story challenge.">
+  <meta name="author" content="Shreya G.">
+  <title>Beyond the Code — My Story | Shreya G.</title>
+  
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Background Ambient Glow Effects Container -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="brand-text">Beyond the Code</span>
+        <span class="brand-badge">iLEAD 2027</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Start</a></li>
+          <li><a href="#story" class="nav-link">My Story</a></li>
+          <li><a href="#journey" class="nav-link">The Journey</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#excites" class="nav-link">What Excites Me</a></li>
+          <li><a href="#beyond" class="nav-link">Beyond the Screen</a></li>
+          <li><a href="#future" class="nav-link">The Future</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#story" class="btn btn-sm btn-ghost nav-cta-btn">Read Story</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ==================== 1. HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <!-- Interactive Dynamic Canvas Background -->
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill hero-badge reveal">
+            <span class="pulse-dot"></span>
+            <span>iLEAD 2027 • Build Your Story</span>
+          </div>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="text-gradient">Shreya</span>.
+          </h1>
+
+          <p class="hero-tagline reveal">
+            Curious mind. Creative thinker. Future builder.
+          </p>
+
+          <p class="hero-intro reveal">
+            I am a Computer Science Engineering student fascinated by the bridge between logic and imagination. 
+            For me, technology isn't just about syntax or algorithms—it's about untangling real-world challenges, 
+            staying relentlessly curious, and turning bold ideas into software that genuinely matters.
+          </p>
+
+          <div class="hero-cta-group reveal">
+            <a href="#story" class="btn btn-primary">
+              <span>Read My Story</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="#journey" class="btn btn-secondary">
+              <span>Explore The Journey</span>
+            </a>
+          </div>
+
+          <!-- Hero Micro Attributes -->
+          <div class="hero-highlights reveal">
+            <div class="highlight-item">
+              <span class="highlight-label">Mindset</span>
+              <span class="highlight-val">Driven by Curiosity</span>
+            </div>
+            <div class="highlight-divider" aria-hidden="true"></div>
+            <div class="highlight-item">
+              <span class="highlight-label">Approach</span>
+              <span class="highlight-val">Rooted in Consistency</span>
+            </div>
+            <div class="highlight-divider" aria-hidden="true"></div>
+            <div class="highlight-item">
+              <span class="highlight-label">Mission</span>
+              <span class="highlight-val">Building Useful Technology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#story" class="scroll-down-indicator" aria-label="Scroll to My Story">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+        <span class="indicator-text">Scroll to explore</span>
+      </a>
+    </section>
+
+    <!-- ==================== 2. MY STORY ==================== -->
+    <section class="section story-section" id="story">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01 / Introduction</span>
+          <h2 class="section-title">My Story</h2>
+          <p class="section-subtitle">
+            A grounded reflection on finding my voice in Computer Science and the belief that growth begins with genuine curiosity.
+          </p>
+        </div>
+
+        <div class="story-layout">
+          <!-- Left Column: The Narrative -->
+          <div class="story-narrative reveal">
+            <div class="editorial-lead">
+              <p>
+                I didn’t choose Computer Science Engineering because I had every answer figured out. 
+                I chose it because I had questions.
+              </p>
+            </div>
+
+            <div class="editorial-body">
+              <p>
+                From an early age, I found myself drawn to understanding how complex systems function beneath their surfaces. 
+                When I wrote my very first lines of code, something clicked—not because it was easy, but because for the first time, 
+                abstract logic became something tangible. You write an instruction, and an entire system responds.
+              </p>
+              <p>
+                Stepping into engineering school quickly taught me that real learning rarely matches the neat textbook examples. 
+                There were days spent deciphering cryptographic compiler errors, staring at recursive calls that refused to terminate, 
+                and realizing that the first draft of any solution is rarely the right one.
+              </p>
+              <p>
+                Instead of being discouraged, I found comfort in that messiness. I discovered that engineering is not an innate gift of genius; 
+                it is a discipline of patience, structured thought, and honest iteration. You try, you break, you diagnose, and you rebuild with a clearer understanding.
+              </p>
+            </div>
+
+            <!-- Authentic Philosophy Callout -->
+            <div class="story-quote-card">
+              <div class="quote-bar" aria-hidden="true"></div>
+              <p class="quote-text">
+                "I believe that growth does not come from instant perfection. It comes from curiosity, consistency, creativity, and the quiet courage to learn from your mistakes."
+              </p>
+              <span class="quote-author">— Personal Core Philosophy</span>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Perspectives & Principles -->
+          <div class="story-sidebar reveal">
+            <div class="card perspective-card">
+              <div class="card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 16v-4"></path>
+                  <path d="M12 8h.01"></path>
+                </svg>
+              </div>
+              <h3 class="card-title">Who I Am Today</h3>
+              <p class="card-desc">
+                A Computer Science Engineering student navigating the intersection of foundational software systems, artificial intelligence, and purposeful problem-solving.
+              </p>
+            </div>
+
+            <div class="card perspective-card">
+              <div class="card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12h20"></path>
+                  <path d="M20 12l-4-4"></path>
+                  <path d="M20 12l-4 4"></path>
+                </svg>
+              </div>
+              <h3 class="card-title">How I Approach Learning</h3>
+              <p class="card-desc">
+                I prioritize deep conceptual understanding over surface-level memorization. I learn best by getting my hands dirty—building prototypes, testing edge cases, and asking "why" at every layer.
+              </p>
+            </div>
+
+            <div class="card perspective-card">
+              <div class="card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <h3 class="card-title">What Keeps Me Grounded</h3>
+              <p class="card-desc">
+                Recognizing that technology is ultimately meant for people. The most elegant algorithm holds little value if it doesn't make someone's life easier, safer, or more empowered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. THE JOURNEY SO FAR ==================== -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02 / Milestones & Foundations</span>
+          <h2 class="section-title">The Journey So Far</h2>
+          <p class="section-subtitle">
+            Four key stages that have shaped my technical foundation, each marked by curiosity, hands-on building, and valuable lessons.
+          </p>
+        </div>
+
+        <!-- 4 Journey Pillar Cards -->
+        <div class="journey-grid">
+          <!-- Card 1: Learning to Code -->
+          <div class="journey-card reveal">
+            <div class="journey-card-header">
+              <span class="stage-number">01</span>
+              <div class="stage-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="journey-title">Learning to Code</h3>
+            <p class="journey-text">
+              The journey began with the fundamental realization that coding is not about writing commands, but about deconstructing ambiguity into crisp, logical structures.
+            </p>
+            <ul class="journey-points">
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Mastering core algorithmic thinking and data structure mechanics</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Developing an intuition for time/space efficiency and code clarity</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Learning to read documentation independently and debug systematically</span>
+              </li>
+            </ul>
+            <div class="journey-badge">Foundational Logic</div>
+          </div>
+
+          <!-- Card 2: Exploring AI & Machine Learning -->
+          <div class="journey-card reveal">
+            <div class="journey-card-header">
+              <span class="stage-number">02</span>
+              <div class="stage-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0 8 0V6a4 4 0 0 0-4-4z"></path>
+                  <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  <path d="M12 14v4"></path>
+                  <line x1="8" y1="18" x2="16" y2="18"></line>
+                  <circle cx="12" cy="12" r="1"></circle>
+                </svg>
+              </div>
+            </div>
+            <h3 class="journey-title">Exploring AI & Machine Learning</h3>
+            <p class="journey-text">
+              Transitioning from deterministic rule-based programming into the realm where systems identify intricate patterns and learn directly from high-dimensional data.
+            </p>
+            <ul class="journey-points">
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Understanding mathematical intuitions behind classifiers, regressions, and neural models</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Navigating real-world data issues: noise, class imbalances, and over-fitting</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Appreciating the critical need for model explainability and ethical validation</span>
+              </li>
+            </ul>
+            <div class="journey-badge">Data & Intelligence</div>
+          </div>
+
+          <!-- Card 3: Building Real Projects -->
+          <div class="journey-card reveal">
+            <div class="journey-card-header">
+              <span class="stage-number">03</span>
+              <div class="stage-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="journey-title">Building Real Projects</h3>
+            <p class="journey-text">
+              Theory only becomes mastery when tested against real problems. I focused on building practical, end-to-end applications that bridge engineering with human context.
+            </p>
+            <ul class="journey-points">
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Face-recognition automation tackling environmental lighting & latency</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Bioinformatics ML pipeline classifying complex DNA cancer signatures</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>AgriTech applications designed for practical, real-world grower utility</span>
+              </li>
+            </ul>
+            <div class="journey-badge">Practical Implementation</div>
+          </div>
+
+          <!-- Card 4: Growing Through Challenges -->
+          <div class="journey-card reveal">
+            <div class="journey-card-header">
+              <span class="stage-number">04</span>
+              <div class="stage-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 6L6 18"></path>
+                  <path d="M6 6l12 12"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="journey-title">Growing Through Challenges</h3>
+            <p class="journey-text">
+              Every breakthrough was preceded by confusion. The greatest growth hasn't come when code ran on the first try, but when things failed and demanded deep investigation.
+            </p>
+            <ul class="journey-points">
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Demystifying multi-hour debugging sessions into structured diagnostic steps</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Embracing code refactoring as an ongoing discipline rather than a chore</span>
+              </li>
+              <li>
+                <span class="bullet-dot"></span>
+                <span>Building resilience: treating every error not as a roadblock, but as useful data</span>
+              </li>
+            </ul>
+            <div class="journey-badge">Resilience & Grit</div>
+          </div>
+        </div>
+
+        <!-- ==================== PROJECT DEEP-DIVE SHOWCASE ==================== -->
+        <div class="projects-subwrapper" id="projects">
+          <div class="sub-header reveal">
+            <span class="sub-tag">Hands-on Explorations</span>
+            <h3 class="sub-title">Projects That Taught Me the Most</h3>
+            <p class="sub-desc">
+              Three representative endeavors where I applied software engineering, machine learning, and domain research to solve real-world problems.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Face-Recognition Attendance System -->
+            <article class="project-card reveal">
+              <div class="project-header">
+                <div class="project-type-tag">Computer Vision & Automation</div>
+                <div class="project-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                </div>
+              </div>
+              
+              <h4 class="project-name">Face-Recognition Attendance System</h4>
+              <p class="project-summary">
+                An automated verification system built to eliminate manual, error-prone roll calls through real-time facial feature extraction and seamless record updates.
+              </p>
+
+              <div class="project-details">
+                <div class="detail-block">
+                  <span class="detail-label">The Challenge</span>
+                  <p class="detail-text">Overcoming variable room illumination, varying angles, and real-time processing constraints without lagging on standard hardware.</p>
+                </div>
+                <div class="detail-block">
+                  <span class="detail-label">The Approach</span>
+                  <p class="detail-text">Implemented facial landmark alignment and feature embedding extraction, paired with confidence thresholds to minimize false positive triggers.</p>
+                </div>
+                <div class="detail-block">
+                  <span class="detail-label">What I Learned</span>
+                  <p class="detail-text">High theoretical accuracy means little if environmental factors like shadows degrade input quality; robust preprocessing is everything.</p>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">OpenCV & Embeddings</span>
+                <span class="tag">Python</span>
+                <span class="tag">Automated Logging</span>
+              </div>
+            </article>
+
+            <!-- Project 2: DNA-Based Cancer Classification ML -->
+            <article class="project-card reveal">
+              <div class="project-header">
+                <div class="project-type-tag">Bioinformatics & Machine Learning</div>
+                <div class="project-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M2 15c6.667-6 13.333 0 20-6"></path>
+                    <path d="M9 22c1.798-1.998 2.518-3.995 2.807-5.993"></path>
+                    <path d="M15 2c-1.798 1.998-2.518 3.995-2.807 5.993"></path>
+                    <path d="M17 6l-2.5-2.5"></path>
+                    <path d="M14 8l-1-1"></path>
+                    <path d="M7 18l2.5 2.5"></path>
+                    <path d="M10 16l1 1"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <h4 class="project-name">DNA-Based Cancer Classification</h4>
+              <p class="project-summary">
+                A predictive machine-learning model analyzing gene expression levels and genomic sequence variations to assist in the early classification of cancer subtypes.
+              </p>
+
+              <div class="project-details">
+                <div class="detail-block">
+                  <span class="detail-label">The Challenge</span>
+                  <p class="detail-text">Handling the "curse of dimensionality"—tens of thousands of genetic markers paired with a comparatively limited patient sample size.</p>
+                </div>
+                <div class="detail-block">
+                  <span class="detail-label">The Approach</span>
+                  <p class="detail-text">Applied dimensionality reduction and rigorous cross-validation to isolate statistically significant biomarker features before training classification models.</p>
+                </div>
+                <div class="detail-block">
+                  <span class="detail-label">What I Learned</span>
+                  <p class="detail-text">In healthcare and genomics, a model's interpretability and false-negative rate carry profound human implications. Precision must never be compromised.</p>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Genomic Data</span>
+                <span class="tag">Feature Selection</span>
+                <span class="tag">Scikit-Learn</span>
+              </div>
+            </article>
+
+            <!-- Project 3: Agricultural Technology Project -->
+            <article class="project-card reveal">
+              <div class="project-header">
+                <div class="project-type-tag">Smart Agriculture & Pragmatic IoT</div>
+                <div class="project-icon-wrap">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10A10 10 0 0 0 12 2z"></path>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                </div>
+              </div>
+              
+              <h4 class="project-name">Agricultural Technology Solution</h4>
+              <p class="project-summary">
+                A data-driven farming assistant designed to provide growers with actionable soil, weather, and crop health insights through an accessible, straightforward interface.
+              </p>
+
+              <div class="project-details">
+                <div class="detail-block">
+                  <span class="detail-label">The Challenge</span>
+                  <p class="detail-text">Designing technology for users in environments with variable internet connectivity and prioritizing immediate clarity over confusing dashboards.</p>
+                </div>
+                <div class="detail-block">
+                  <span class="detail-label">The Approach</span>
+                  <p class="detail-text">Aggregated environmental sensor metrics with predictive thresholds to recommend optimal irrigation timing and early warning signs for crop stress.</p>
+                </div>
+                <div class="detail-block">
+                  <span class="detail-label">What I Learned</span>
+                  <p class="detail-text">The true value of engineering lies in empathy for end-users. The simplest solution that reliably solves a farmer's problem beats the most complex system.</p>
+                </div>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tag">Data Insights</span>
+                <span class="tag">Sensory Analytics</span>
+                <span class="tag">User Empathy</span>
+                <span class="tag">Practical Engineering</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. WHAT EXCITES ME ==================== -->
+    <section class="section excites-section" id="excites">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03 / Core Motivations</span>
+          <h2 class="section-title">What Excites Me</h2>
+          <p class="section-subtitle">
+            Technology is vast, but these four pillars fuel my daily drive to study, build, and explore further.
+          </p>
+        </div>
+
+        <!-- Interactive Pillar Navigation & Display -->
+        <div class="excites-interactive-container reveal">
+          <div class="excites-tabs" role="tablist" aria-label="What Excites Me Categories">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-target="tech-tab" id="tab-1">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </span>
+              <span>Technology</span>
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-target="problem-tab" id="tab-2">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                  <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                </svg>
+              </span>
+              <span>Problem-Solving</span>
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-target="creativity-tab" id="tab-3">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </span>
+              <span>Creativity</span>
+            </button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-target="learning-tab" id="tab-4">
+              <span class="tab-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                </svg>
+              </span>
+              <span>Continuous Learning</span>
+            </button>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="excites-content-box">
+            <!-- 1. Technology -->
+            <div class="tab-pane active" id="tech-tab" role="tabpanel" aria-labelledby="tab-1">
+              <div class="pane-grid">
+                <div class="pane-narrative">
+                  <span class="pane-tag">The Catalyst</span>
+                  <h3 class="pane-title">The Transformative Power of Modern Computing</h3>
+                  <p>
+                    What mesmerizes me about technology is its unique multiplier effect: software can scale empathy and utility 
+                    across boundaries. A single tool written by a thoughtful developer in their bedroom can streamline diagnostics 
+                    for an overseas clinic or help a local family manage agricultural yield.
+                  </p>
+                  <p>
+                    I am specifically fascinated by the convergence of foundational software systems and intelligent models—where 
+                    robust code provides the backbone, and machine intelligence unlocks contextual understanding.
+                  </p>
+                  <div class="focus-points">
+                    <span class="pill-chip">Scalable Architecture</span>
+                    <span class="pill-chip">Intelligent Systems</span>
+                    <span class="pill-chip">Practical Utility</span>
+                  </div>
+                </div>
+                <div class="pane-visual">
+                  <div class="interactive-glow-card">
+                    <div class="code-snippet-preview">
+                      <div class="snippet-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="snippet-title">core_belief.py</span>
+                      </div>
+                      <pre class="snippet-body"><code><span class="k">def</span> <span class="f">build_meaningful_tech</span>(curiosity, care):
+    <span class="c"># Tech is only as good as the problem it solves</span>
+    impact = curiosity.explore()
+    <span class="k">while</span> impact.has_potential():
+        solution = iterate_with_empathy(care)
+        <span class="k">if</span> solution.serves_human_needs():
+            <span class="k">return</span> solution
+    <span class="k">return</span> <span class="s">"Keep listening."</span></code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Problem-Solving -->
+            <div class="tab-pane" id="problem-tab" role="tabpanel" aria-labelledby="tab-2">
+              <div class="pane-grid">
+                <div class="pane-narrative">
+                  <span class="pane-tag">The Craft</span>
+                  <h3 class="pane-title">Untangling Complexity with Structured Logic</h3>
+                  <p>
+                    To me, problem-solving is not a mechanical checklist; it is an analytical puzzle. 
+                    I love the process of taking an ambiguous, daunting challenge, breaking it down into atomic components, 
+                    and solving each one with clarity.
+                  </p>
+                  <p>
+                    There is an unmatched sense of fulfillment when you spend hours dissecting why an edge case fails, 
+                    formulating a hypothesis, testing it, and watching order emerge from disorder. It trains the mind 
+                    to stay calm under pressure.
+                  </p>
+                  <div class="focus-points">
+                    <span class="pill-chip">First-Principles Thinking</span>
+                    <span class="pill-chip">Hypothesis Testing</span>
+                    <span class="pill-chip">Root-Cause Analysis</span>
+                  </div>
+                </div>
+                <div class="pane-visual">
+                  <div class="interactive-steps-box">
+                    <div class="step-row">
+                      <span class="step-num">1</span>
+                      <div class="step-text"><strong>Observe & Frame:</strong> Clearly state the real question before jumping to code.</div>
+                    </div>
+                    <div class="step-row">
+                      <span class="step-num">2</span>
+                      <div class="step-text"><strong>Decompose:</strong> Break large bottlenecks into independent, manageable modules.</div>
+                    </div>
+                    <div class="step-row">
+                      <span class="step-num">3</span>
+                      <div class="step-text"><strong>Iterate & Verify:</strong> Test assumptions rigorously against corner cases.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Creativity -->
+            <div class="tab-pane" id="creativity-tab" role="tabpanel" aria-labelledby="tab-3">
+              <div class="pane-grid">
+                <div class="pane-narrative">
+                  <span class="pane-tag">The Expression</span>
+                  <h3 class="pane-title">Engineering as a Creative Art Form</h3>
+                  <p>
+                    People often contrast engineering with creativity, as if logic and imagination sit at opposite poles. 
+                    I see them as inseparable partners. Writing clean, expressive software is as much an aesthetic choice 
+                    as composing music or designing architecture.
+                  </p>
+                  <p>
+                    Creativity is what enables an engineer to devise an unexpected optimization, craft an intuitive user interface, 
+                    or realize that a biological concept can inspire an algorithmic architecture.
+                  </p>
+                  <div class="focus-points">
+                    <span class="pill-chip">Intuitive Design</span>
+                    <span class="pill-chip">Elegant Architecture</span>
+                    <span class="pill-chip">Unconventional Solutions</span>
+                  </div>
+                </div>
+                <div class="pane-visual">
+                  <div class="creative-quote-panel">
+                    <p class="creative-quote">
+                      "Code is the medium; empathy and imagination are the brushstrokes."
+                    </p>
+                    <div class="creative-tags">
+                      <span>Refactoring as Polish</span>
+                      <span>UX as Respect</span>
+                      <span>Simplicity as Art</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Continuous Learning -->
+            <div class="tab-pane" id="learning-tab" role="tabpanel" aria-labelledby="tab-4">
+              <div class="pane-grid">
+                <div class="pane-narrative">
+                  <span class="pane-tag">The Habit</span>
+                  <h3 class="pane-title">Staying a Forever Student in an Expanding World</h3>
+                  <p>
+                    The tech landscape moves at an astonishing pace. What was cutting-edge yesterday is standard today. 
+                    Rather than feeling overwhelmed by this acceleration, I find it genuinely exhilarating. 
+                    It means there will never come a day when there is nothing left to discover.
+                  </p>
+                  <p>
+                    Being a student of computer science has taught me that expertise isn't knowing all the answers; 
+                    it is the willingness to be comfortable with not knowing, and possessing the systematic discipline to find out.
+                  </p>
+                  <div class="focus-points">
+                    <span class="pill-chip">Daily Reading</span>
+                    <span class="pill-chip">Experimentation</span>
+                    <span class="pill-chip">Humility</span>
+                  </div>
+                </div>
+                <div class="pane-visual">
+                  <div class="learning-loop-card">
+                    <div class="loop-circle">
+                      <div class="loop-item top">Curiosity</div>
+                      <div class="loop-item right">Attempt</div>
+                      <div class="loop-item bottom">Mistake</div>
+                      <div class="loop-item left">Insight</div>
+                      <div class="loop-center">Growth</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. BEYOND THE SCREEN ==================== -->
+    <section class="section beyond-section" id="beyond">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04 / The Person Behind the Terminal</span>
+          <h2 class="section-title">Beyond the Screen</h2>
+          <p class="section-subtitle">
+            I am more than lines of code and technical stacks. I am a learner, an explorer, and someone who believes deeply in steady personal growth.
+          </p>
+        </div>
+
+        <div class="beyond-grid">
+          <!-- Item 1 -->
+          <div class="beyond-card reveal">
+            <div class="beyond-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="beyond-heading">The Curious Reader</h3>
+            <p class="beyond-desc">
+              Stepping away from computer screens to read widely—from science and philosophy to biographies of thinkers who shaped our world. Broad perspectives feed better technical intuition.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="beyond-card reveal">
+            <div class="beyond-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <h3 class="beyond-heading">Quiet Observation</h3>
+            <p class="beyond-desc">
+              Paying close attention to how everyday people interact with objects, tools, and each other. The best design instincts often come from observing where real people stumble in everyday life.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="beyond-card reveal">
+            <div class="beyond-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20h9"></path>
+                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+              </svg>
+            </div>
+            <h3 class="beyond-heading">Reflective Journaling</h3>
+            <p class="beyond-desc">
+              Taking regular time to write down lessons from the week, what went wrong, what clicked, and what to refine next. Articulating thoughts in words keeps mind and goals aligned.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="beyond-card reveal">
+            <div class="beyond-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <h3 class="beyond-heading">Balance & Recharging</h3>
+            <p class="beyond-desc">
+              Believing that sustained excellence requires recovery. Long walks, quiet music, and time with family clear the mental slate, bringing fresh clarity back to complex engineering tasks.
+            </p>
+          </div>
+        </div>
+
+        <!-- Personal Manifesto Banner -->
+        <div class="manifesto-box reveal">
+          <div class="manifesto-content">
+            <h3 class="manifesto-heading">A Continuous Work in Progress</h3>
+            <p class="manifesto-text">
+              I don't measure myself against an unrealistic standard of overnight mastery. Instead, I judge my progress by whether I am more patient, more capable, and more thoughtful today than I was six months ago.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. THE FUTURE I'M BUILDING ==================== -->
+    <section class="section future-section" id="future">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05 / Vision & Ambition</span>
+          <h2 class="section-title">The Future I'm Building</h2>
+          <p class="section-subtitle">
+            Where I intend to steer my craft: becoming a skilled software professional who develops practical solutions and continues to explore uncharted possibilities.
+          </p>
+        </div>
+
+        <div class="future-layout">
+          <!-- Main Vision Narrative -->
+          <div class="future-vision-card reveal">
+            <div class="vision-header">
+              <div class="vision-indicator">
+                <span class="ping-circle"></span>
+                <span>My Horizon</span>
+              </div>
+              <h3 class="vision-title">Building Meaningful Technology That Lasts</h3>
+            </div>
+            <div class="vision-body">
+              <p>
+                My ambition is not just to write code that passes tests, but to become a skilled software professional 
+                capable of designing robust, maintainable, and ethically sound systems that genuinely benefit people.
+              </p>
+              <p>
+                As intelligent systems continue to reshape how society works, I want to be among the builders who bridge 
+                advanced technological capabilities with accessible, everyday needs. I want to build tools that assist 
+                healthcare specialists, empower farmers, enhance learning, and simplify complex workflows.
+              </p>
+              <p>
+                The road ahead demands continuous self-reinvention. I am committed to sharpening my engineering instincts, 
+                deepening my understanding of distributed systems and machine learning, and working alongside mentors 
+                and peers who push me to be better every single day.
+              </p>
+            </div>
+          </div>
+
+          <!-- Future Trajectory Pillars -->
+          <div class="future-pillars reveal">
+            <div class="pillar-box">
+              <div class="pillar-marker">1</div>
+              <div class="pillar-details">
+                <h4 class="pillar-title">Technical Craftsmanship</h4>
+                <p class="pillar-desc">
+                  Building deep competence in software architecture, algorithms, and machine intelligence with high standards of reliability and clarity.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-marker">2</div>
+              <div class="pillar-details">
+                <h4 class="pillar-title">Human-Centric Impact</h4>
+                <p class="pillar-desc">
+                  Prioritizing solutions that address tangible human needs over empty technical vanity or chasing short-lived trends.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-box">
+              <div class="pillar-marker">3</div>
+              <div class="pillar-details">
+                <h4 class="pillar-title">Lifelong Exploration</h4>
+                <p class="pillar-desc">
+                  Remaining genuinely curious, humble enough to listen to feedback, and agile enough to embrace emerging paradigms.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. CLOSING SECTION & FOOTER ==================== -->
+    <section class="closing-section" id="closing">
+      <div class="container closing-container">
+        <div class="closing-card reveal">
+          <div class="closing-glow" aria-hidden="true"></div>
+          <span class="closing-tag">The Story Continues</span>
+          <h2 class="closing-statement">
+            "I'm still becoming. And that's the exciting part."
+          </h2>
+          <p class="closing-desc">
+            Every day is a new opportunity to write better code, ask sharper questions, and build something meaningful. 
+            Thank you for taking a moment to experience my story for iLEAD 2027.
+          </p>
+          <div class="closing-actions">
+            <a href="#hero" class="btn btn-secondary back-to-top-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 15l-6-6-6 6"/>
+              </svg>
+              <span>Back to Beginning</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-author">Shreya G.</span>
+        <span class="footer-dot">•</span>
+        <span class="footer-role">Computer Science Engineering</span>
+      </div>
+      <div class="footer-center">
+        <span class="footer-challenge">iLEAD 2027 | Build Your Story</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-tagline">Crafted with curiosity & code</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
